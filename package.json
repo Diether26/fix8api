@@ -1,0 +1,53 @@
+{
+  "name": "fix8",
+  "bin": "app.js",
+  "version": "1.0.0",
+  "description": "A MOBILE APPLICATION THAT CONNECTS ONCALL/FREELANCE ELECTRICIANS TO HOUSEHOLDS",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "dev": "nodemon app.js"
+  },
+  "pkg": {
+    "assets": [
+      "./config/**/*",
+      "./node_modules/**/*",
+      "./queries/**/*",
+      "./routers/**/*",
+      "./utils/**/*"
+    ],
+    "output": "dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drawingideascompany/fix8-backend.git"
+  },
+  "author": "Jay Andrade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/drawingideascompany/fix8-backend/issues"
+  },
+  "homepage": "https://github.com/drawingideascompany/fix8-backend#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.6.0",
+    "ejs": "^3.1.8",
+    "express": "^4.17.1",
+    "express-session": "^1.17.3",
+    "formidable": "^1.2.2",
+    "jsonwebtoken": "^8.5.1",
+    "mssql": "^6.3.1",
+    "nodemailer": "^6.7.8",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.0",
+    "pkg": "^5.8.0",
+    "request": "^2.34",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.9"
+  }
+}
